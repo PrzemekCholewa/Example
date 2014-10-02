@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A379a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5UH-zz-6dY">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--Moj View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MojViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="CalyWidokControlleraView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miejsce na imie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UvH-gG-cu5">
+                                <rect key="frame" x="146" y="72" width="309" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="GKB-yr-Qyw"/>
+                                    <constraint firstAttribute="width" constant="309" id="z7L-QH-8oZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miejsce na nazwisko" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHd-fn-ubm">
+                                <rect key="frame" x="146" y="110" width="309" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="309" id="N9L-OU-J6X"/>
+                                    <constraint firstAttribute="height" constant="21" id="bhk-Pa-Xbx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3u-gP-XHq">
+                                <rect key="frame" x="206" y="182" width="189" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AKQ-O3-Wfx"/>
+                                    <constraint firstAttribute="width" constant="189" id="sfh-Eq-B9x"/>
+                                </constraints>
+                                <state key="normal" title="Pokaz muzyke uzytkownika">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="IC4-k3-aqd" kind="push" id="JrX-zA-Pzc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UvH-gG-cu5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="1uS-1r-lhi"/>
+                            <constraint firstItem="k3u-gP-XHq" firstAttribute="top" secondItem="xHd-fn-ubm" secondAttribute="bottom" constant="51" id="AVT-Oe-HCh"/>
+                            <constraint firstItem="xHd-fn-ubm" firstAttribute="top" secondItem="UvH-gG-cu5" secondAttribute="bottom" constant="17" id="Mz7-6w-CaZ"/>
+                            <constraint firstAttribute="centerX" secondItem="k3u-gP-XHq" secondAttribute="centerX" constant="-0.5" id="XDS-5w-zGN"/>
+                            <constraint firstAttribute="centerX" secondItem="UvH-gG-cu5" secondAttribute="centerX" constant="-0.5" id="jUR-nF-fJA"/>
+                            <constraint firstAttribute="centerX" secondItem="xHd-fn-ubm" secondAttribute="centerX" constant="-0.5" id="xgK-01-qPO"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="napisNaImie" destination="UvH-gG-cu5" id="lAS-aB-kIM"/>
+                            <outlet property="napisNaNazwisko" destination="xHd-fn-ubm" id="UON-vA-2ot"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="pQh-oD-Svr"/>
+                    <connections>
+                        <outlet property="widokCalegoController" destination="8bC-Xf-vdC" id="Sdr-kw-elh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1033" y="431"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="TzB-ge-DgR">
+            <objects>
+                <tableViewController id="IC4-k3-aqd" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hRS-gf-r3E">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="musicCell" id="9s9-6G-AuO">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9s9-6G-AuO" id="iSV-df-7aK">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="IC4-k3-aqd" id="7RV-XC-JkO"/>
+                            <outlet property="delegate" destination="IC4-k3-aqd" id="NPN-od-8Zf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="E6g-Md-er3"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MgE-Ar-VaR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1760" y="431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BWv-vt-vcu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5UH-zz-6dY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rTa-9C-vnx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="VFx-Iw-O50"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p4V-Je-CFJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="221" y="431"/>
+        </scene>
+    </scenes>
+</document>
