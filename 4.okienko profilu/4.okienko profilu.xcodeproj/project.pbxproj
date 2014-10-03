@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32B76F6A19DE81FE00F7923D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B76F6919DE81FE00F7923D /* main.m */; };
+		32B76F6D19DE81FE00F7923D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B76F6C19DE81FE00F7923D /* AppDelegate.m */; };
+		32B76F7019DE81FE00F7923D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B76F6F19DE81FE00F7923D /* ViewController.m */; };
+		32B76F7319DE81FE00F7923D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32B76F7119DE81FE00F7923D /* Main.storyboard */; };
+		32B76F7519DE81FE00F7923D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B76F7419DE81FE00F7923D /* Images.xcassets */; };
+		32B76F7819DE81FE00F7923D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32B76F7619DE81FE00F7923D /* LaunchScreen.xib */; };
+		32B76F8419DE81FE00F7923D /* __okienko_profiluTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B76F8319DE81FE00F7923D /* __okienko_profiluTests.m */; };
+		32B76F8F19DE89CB00F7923D /* EdycjaProfiluViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B76F8E19DE89CB00F7923D /* EdycjaProfiluViewController.m */; };
+		32B76F9819DE9EF000F7923D /* ZdjecieUzytkownikaImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B76F9719DE9EF000F7923D /* ZdjecieUzytkownikaImageView.m */; };
+		32B76F9E19DE9FDF00F7923D /* PoczatkowyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B76F9D19DE9FDF00F7923D /* PoczatkowyViewController.m */; };
+		32B76FA019DEBC6300F7923D /* zdjecie1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32B76F9F19DEBC6300F7923D /* zdjecie1.jpg */; };
+		32B76FA319DEBCE000F7923D /* RoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B76FA219DEBCE000F7923D /* RoundedButton.m */; };
+		32B76FA619DEC00500F7923D /* DaneUzytkownikaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B76FA519DEC00500F7923D /* DaneUzytkownikaTableViewController.m */; };
+		32B76FA919DEC6FE00F7923D /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B76FA819DEC6FE00F7923D /* CustomTableViewCell.m */; };
+		32B76FAF19DED31700F7923D /* NSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B76FAE19DED31700F7923D /* NSUser.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32B76F7E19DE81FE00F7923D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32B76F5C19DE81FE00F7923D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32B76F6319DE81FE00F7923D;
+			remoteInfo = "4.okienko profilu";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32B76F6419DE81FE00F7923D /* 4.okienko profilu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "4.okienko profilu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32B76F6819DE81FE00F7923D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32B76F6919DE81FE00F7923D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32B76F6B19DE81FE00F7923D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		32B76F6C19DE81FE00F7923D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		32B76F6E19DE81FE00F7923D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		32B76F6F19DE81FE00F7923D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		32B76F7219DE81FE00F7923D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		32B76F7419DE81FE00F7923D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		32B76F7719DE81FE00F7923D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		32B76F7D19DE81FE00F7923D /* 4.okienko profiluTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "4.okienko profiluTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32B76F8219DE81FE00F7923D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32B76F8319DE81FE00F7923D /* __okienko_profiluTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __okienko_profiluTests.m; sourceTree = "<group>"; };
+		32B76F8D19DE89CB00F7923D /* EdycjaProfiluViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EdycjaProfiluViewController.h; sourceTree = "<group>"; };
+		32B76F8E19DE89CB00F7923D /* EdycjaProfiluViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EdycjaProfiluViewController.m; sourceTree = "<group>"; };
+		32B76F9619DE9EF000F7923D /* ZdjecieUzytkownikaImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZdjecieUzytkownikaImageView.h; sourceTree = "<group>"; };
+		32B76F9719DE9EF000F7923D /* ZdjecieUzytkownikaImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZdjecieUzytkownikaImageView.m; sourceTree = "<group>"; };
+		32B76F9C19DE9FDF00F7923D /* PoczatkowyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PoczatkowyViewController.h; path = ../PoczatkowyViewController.h; sourceTree = "<group>"; };
+		32B76F9D19DE9FDF00F7923D /* PoczatkowyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PoczatkowyViewController.m; path = ../PoczatkowyViewController.m; sourceTree = "<group>"; };
+		32B76F9F19DEBC6300F7923D /* zdjecie1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zdjecie1.jpg; sourceTree = "<group>"; };
+		32B76FA119DEBCE000F7923D /* RoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundedButton.h; sourceTree = "<group>"; };
+		32B76FA219DEBCE000F7923D /* RoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundedButton.m; sourceTree = "<group>"; };
+		32B76FA419DEC00500F7923D /* DaneUzytkownikaTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DaneUzytkownikaTableViewController.h; sourceTree = "<group>"; };
+		32B76FA519DEC00500F7923D /* DaneUzytkownikaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DaneUzytkownikaTableViewController.m; sourceTree = "<group>"; };
+		32B76FA719DEC6FE00F7923D /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		32B76FA819DEC6FE00F7923D /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		32B76FAD19DED31700F7923D /* NSUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSUser.h; path = ../NSUser.h; sourceTree = "<group>"; };
+		32B76FAE19DED31700F7923D /* NSUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSUser.m; path = ../NSUser.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32B76F6119DE81FE00F7923D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32B76F7A19DE81FE00F7923D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32B76F5B19DE81FE00F7923D = {
+			isa = PBXGroup;
+			children = (
+				32B76F6619DE81FE00F7923D /* 4.okienko profilu */,
+				32B76F8019DE81FE00F7923D /* 4.okienko profiluTests */,
+				32B76F6519DE81FE00F7923D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		32B76F6519DE81FE00F7923D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32B76F6419DE81FE00F7923D /* 4.okienko profilu.app */,
+				32B76F7D19DE81FE00F7923D /* 4.okienko profiluTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32B76F6619DE81FE00F7923D /* 4.okienko profilu */ = {
+			isa = PBXGroup;
+			children = (
+				32B76F7119DE81FE00F7923D /* Main.storyboard */,
+				32B76F6B19DE81FE00F7923D /* AppDelegate.h */,
+				32B76F6C19DE81FE00F7923D /* AppDelegate.m */,
+				32B76F6E19DE81FE00F7923D /* ViewController.h */,
+				32B76F6F19DE81FE00F7923D /* ViewController.m */,
+				32B76F9C19DE9FDF00F7923D /* PoczatkowyViewController.h */,
+				32B76F9D19DE9FDF00F7923D /* PoczatkowyViewController.m */,
+				32B76FAD19DED31700F7923D /* NSUser.h */,
+				32B76FAE19DED31700F7923D /* NSUser.m */,
+				32B76F9319DE91C100F7923D /* Okienko edycji profilu */,
+				32B76F7419DE81FE00F7923D /* Images.xcassets */,
+				32B76F7619DE81FE00F7923D /* LaunchScreen.xib */,
+				32B76F6719DE81FE00F7923D /* Supporting Files */,
+			);
+			path = "4.okienko profilu";
+			sourceTree = "<group>";
+		};
+		32B76F6719DE81FE00F7923D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32B76F6819DE81FE00F7923D /* Info.plist */,
+				32B76F6919DE81FE00F7923D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32B76F8019DE81FE00F7923D /* 4.okienko profiluTests */ = {
+			isa = PBXGroup;
+			children = (
+				32B76F8319DE81FE00F7923D /* __okienko_profiluTests.m */,
+				32B76F8119DE81FE00F7923D /* Supporting Files */,
+			);
+			path = "4.okienko profiluTests";
+			sourceTree = "<group>";
+		};
+		32B76F8119DE81FE00F7923D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32B76F8219DE81FE00F7923D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32B76F9319DE91C100F7923D /* Okienko edycji profilu */ = {
+			isa = PBXGroup;
+			children = (
+				32B76F9F19DEBC6300F7923D /* zdjecie1.jpg */,
+				32B76F8D19DE89CB00F7923D /* EdycjaProfiluViewController.h */,
+				32B76F8E19DE89CB00F7923D /* EdycjaProfiluViewController.m */,
+				32B76FA419DEC00500F7923D /* DaneUzytkownikaTableViewController.h */,
+				32B76FA519DEC00500F7923D /* DaneUzytkownikaTableViewController.m */,
+				32B76F9619DE9EF000F7923D /* ZdjecieUzytkownikaImageView.h */,
+				32B76F9719DE9EF000F7923D /* ZdjecieUzytkownikaImageView.m */,
+				32B76FA719DEC6FE00F7923D /* CustomTableViewCell.h */,
+				32B76FA819DEC6FE00F7923D /* CustomTableViewCell.m */,
+				32B76FA119DEBCE000F7923D /* RoundedButton.h */,
+				32B76FA219DEBCE000F7923D /* RoundedButton.m */,
+			);
+			name = "Okienko edycji profilu";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32B76F6319DE81FE00F7923D /* 4.okienko profilu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32B76F8719DE81FE00F7923D /* Build configuration list for PBXNativeTarget "4.okienko profilu" */;
+			buildPhases = (
+				32B76F6019DE81FE00F7923D /* Sources */,
+				32B76F6119DE81FE00F7923D /* Frameworks */,
+				32B76F6219DE81FE00F7923D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "4.okienko profilu";
+			productName = "4.okienko profilu";
+			productReference = 32B76F6419DE81FE00F7923D /* 4.okienko profilu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32B76F7C19DE81FE00F7923D /* 4.okienko profiluTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32B76F8A19DE81FE00F7923D /* Build configuration list for PBXNativeTarget "4.okienko profiluTests" */;
+			buildPhases = (
+				32B76F7919DE81FE00F7923D /* Sources */,
+				32B76F7A19DE81FE00F7923D /* Frameworks */,
+				32B76F7B19DE81FE00F7923D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32B76F7F19DE81FE00F7923D /* PBXTargetDependency */,
+			);
+			name = "4.okienko profiluTests";
+			productName = "4.okienko profiluTests";
+			productReference = 32B76F7D19DE81FE00F7923D /* 4.okienko profiluTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32B76F5C19DE81FE00F7923D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "AppUnite Builds";
+				TargetAttributes = {
+					32B76F6319DE81FE00F7923D = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					32B76F7C19DE81FE00F7923D = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 32B76F6319DE81FE00F7923D;
+					};
+				};
+			};
+			buildConfigurationList = 32B76F5F19DE81FE00F7923D /* Build configuration list for PBXProject "4.okienko profilu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32B76F5B19DE81FE00F7923D;
+			productRefGroup = 32B76F6519DE81FE00F7923D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32B76F6319DE81FE00F7923D /* 4.okienko profilu */,
+				32B76F7C19DE81FE00F7923D /* 4.okienko profiluTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32B76F6219DE81FE00F7923D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32B76F7319DE81FE00F7923D /* Main.storyboard in Resources */,
+				32B76F7819DE81FE00F7923D /* LaunchScreen.xib in Resources */,
+				32B76FA019DEBC6300F7923D /* zdjecie1.jpg in Resources */,
+				32B76F7519DE81FE00F7923D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32B76F7B19DE81FE00F7923D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32B76F6019DE81FE00F7923D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32B76FA319DEBCE000F7923D /* RoundedButton.m in Sources */,
+				32B76F8F19DE89CB00F7923D /* EdycjaProfiluViewController.m in Sources */,
+				32B76F7019DE81FE00F7923D /* ViewController.m in Sources */,
+				32B76F6D19DE81FE00F7923D /* AppDelegate.m in Sources */,
+				32B76F6A19DE81FE00F7923D /* main.m in Sources */,
+				32B76FA919DEC6FE00F7923D /* CustomTableViewCell.m in Sources */,
+				32B76F9819DE9EF000F7923D /* ZdjecieUzytkownikaImageView.m in Sources */,
+				32B76FA619DEC00500F7923D /* DaneUzytkownikaTableViewController.m in Sources */,
+				32B76F9E19DE9FDF00F7923D /* PoczatkowyViewController.m in Sources */,
+				32B76FAF19DED31700F7923D /* NSUser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32B76F7919DE81FE00F7923D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32B76F8419DE81FE00F7923D /* __okienko_profiluTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32B76F7F19DE81FE00F7923D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32B76F6319DE81FE00F7923D /* 4.okienko profilu */;
+			targetProxy = 32B76F7E19DE81FE00F7923D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32B76F7119DE81FE00F7923D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32B76F7219DE81FE00F7923D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		32B76F7619DE81FE00F7923D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32B76F7719DE81FE00F7923D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32B76F8519DE81FE00F7923D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32B76F8619DE81FE00F7923D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32B76F8819DE81FE00F7923D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "4.okienko profilu/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		32B76F8919DE81FE00F7923D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "4.okienko profilu/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		32B76F8B19DE81FE00F7923D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "4.okienko profiluTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/4.okienko profilu.app/4.okienko profilu";
+			};
+			name = Debug;
+		};
+		32B76F8C19DE81FE00F7923D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "4.okienko profiluTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/4.okienko profilu.app/4.okienko profilu";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32B76F5F19DE81FE00F7923D /* Build configuration list for PBXProject "4.okienko profilu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32B76F8519DE81FE00F7923D /* Debug */,
+				32B76F8619DE81FE00F7923D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32B76F8719DE81FE00F7923D /* Build configuration list for PBXNativeTarget "4.okienko profilu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32B76F8819DE81FE00F7923D /* Debug */,
+				32B76F8919DE81FE00F7923D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32B76F8A19DE81FE00F7923D /* Build configuration list for PBXNativeTarget "4.okienko profiluTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32B76F8B19DE81FE00F7923D /* Debug */,
+				32B76F8C19DE81FE00F7923D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32B76F5C19DE81FE00F7923D /* Project object */;
+}

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A379a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Rmi-mU-5X1">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--poczatkowy-->
+        <scene sceneID="la1-bF-r6P">
+            <objects>
+                <viewController title="poczatkowy" id="Hxt-To-rcl" customClass="PoczatkowyViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9ZG-RH-8cU"/>
+                        <viewControllerLayoutGuide type="bottom" id="cZO-Dj-GHw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X4e-um-Dv8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Wj-eS-xw3" customClass="RoundedButton">
+                                <rect key="frame" x="226" y="282" width="149" height="35"/>
+                                <color key="backgroundColor" red="0.3843137254901961" green="0.73333333333333328" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ZLV-Zu-D92">
+                                        <variation key="widthClass=compact" constant="34"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="149" id="vrg-F5-oXE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Edytuj dane">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ZLV-Zu-D92"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="ZLV-Zu-D92"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="b88-vN-DUA" kind="push" id="yMu-pi-yv7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83529411764705885" green="0.83529411764705885" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="6Wj-eS-xw3" secondAttribute="centerX" constant="-0.5" id="a5G-VY-GRW"/>
+                            <constraint firstAttribute="centerY" secondItem="6Wj-eS-xw3" secondAttribute="centerY" constant="0.5" id="iu5-fT-akj"/>
+                            <constraint firstAttribute="centerY" secondItem="6Wj-eS-xw3" secondAttribute="centerY" id="lMW-fF-dH3"/>
+                            <constraint firstItem="6Wj-eS-xw3" firstAttribute="centerX" secondItem="X4e-um-Dv8" secondAttribute="centerX" id="nP3-A2-fu3"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="a5G-VY-GRW"/>
+                                <exclude reference="lMW-fF-dH3"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="a5G-VY-GRW"/>
+                                <include reference="lMW-fF-dH3"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="J7d-Ae-zXy">
+                        <barButtonItem key="backBarButtonItem" title="   " id="Gua-FI-e7l"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5dD-PO-ERV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="912" y="573"/>
+        </scene>
+        <!--Edytuj Dane-->
+        <scene sceneID="uoL-xk-OSg">
+            <objects>
+                <viewController title="Edytuj Dane" id="b88-vN-DUA" customClass="EdycjaProfiluViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SkG-tv-tEE"/>
+                        <viewControllerLayoutGuide type="bottom" id="m2Q-bZ-vfN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Tq-DW-KJk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zdjecie1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ora-Fp-ByS" customClass="ZdjecieUzytkownikaImageView">
+                                <rect key="frame" x="240" y="79" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="qVq-QF-urR"/>
+                                    <constraint firstAttribute="height" constant="120" id="u54-tH-ZMz"/>
+                                </constraints>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="136" y="72" width="128" height="128"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hP-1x-yBy" customClass="RoundedButton">
+                                <rect key="frame" x="233" y="207" width="134" height="35"/>
+                                <color key="backgroundColor" red="0.22745098039215686" green="0.60784313725490191" blue="0.074509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="YwS-eS-YtT"/>
+                                    <constraint firstAttribute="width" constant="134" id="e9e-4G-AbZ"/>
+                                    <constraint firstAttribute="width" constant="156" id="fmT-yo-HUH"/>
+                                    <constraint firstAttribute="height" constant="35" id="o31-hW-Y69"/>
+                                </constraints>
+                                <state key="normal" title="Zmień awatar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="YwS-eS-YtT"/>
+                                        <exclude reference="fmT-yo-HUH"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="YwS-eS-YtT"/>
+                                        <include reference="fmT-yo-HUH"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DWz-an-bGb">
+                                <rect key="frame" x="16" y="250" width="568" height="292"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="292" id="Kwu-U8-eii"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="UYz-La-eOS" kind="embed" id="zam-6y-hoF"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.79607843137254897" green="0.79607843137254897" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.27450980392156865" green="0.6588235294117647" blue="0.086274509803921567" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="DWz-an-bGb" firstAttribute="leading" secondItem="3Tq-DW-KJk" secondAttribute="leadingMargin" id="1hZ-rW-aZs"/>
+                            <constraint firstAttribute="centerX" secondItem="ora-Fp-ByS" secondAttribute="centerX" id="Ayp-fZ-w9o"/>
+                            <constraint firstItem="DWz-an-bGb" firstAttribute="top" secondItem="5hP-1x-yBy" secondAttribute="bottom" constant="8" id="Fpg-bj-dUe"/>
+                            <constraint firstItem="m2Q-bZ-vfN" firstAttribute="top" relation="greaterThanOrEqual" secondItem="DWz-an-bGb" secondAttribute="bottom" constant="10" id="LR6-vO-vzz"/>
+                            <constraint firstItem="DWz-an-bGb" firstAttribute="trailing" secondItem="3Tq-DW-KJk" secondAttribute="trailingMargin" id="RyM-GC-CrX"/>
+                            <constraint firstItem="5hP-1x-yBy" firstAttribute="top" secondItem="ora-Fp-ByS" secondAttribute="bottom" constant="8" id="f98-s3-cOJ"/>
+                            <constraint firstAttribute="centerY" secondItem="ora-Fp-ByS" secondAttribute="centerY" id="gaa-EU-JaR"/>
+                            <constraint firstItem="ora-Fp-ByS" firstAttribute="top" secondItem="SkG-tv-tEE" secondAttribute="bottom" constant="15" id="gqh-bc-oPn"/>
+                            <constraint firstAttribute="centerX" secondItem="5hP-1x-yBy" secondAttribute="centerX" id="jMm-qM-5Lm"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="gaa-EU-JaR"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ora-Fp-ByS"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edytuj dane" id="w24-pd-6ZX">
+                        <barButtonItem key="backBarButtonItem" title="Cofnij" id="wN4-Nf-dTD"/>
+                        <barButtonItem key="rightBarButtonItem" title="Ok" id="JW6-NU-uNE"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="button" destination="5hP-1x-yBy" id="M5M-V3-kHb"/>
+                        <outlet property="imageView" destination="ora-Fp-ByS" id="TFX-Yp-HsV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4XH-zt-XCw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1639" y="573"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ibf-dr-Q4p">
+            <objects>
+                <navigationController id="Rmi-mU-5X1" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kz8-cJ-Pfk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Hxt-To-rcl" kind="relationship" relationship="rootViewController" id="5BN-ZX-ZI7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bH8-T7-gWU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117" y="573"/>
+        </scene>
+        <!--Dane Uzytkownika Table View Controller-->
+        <scene sceneID="5pV-kR-KJx">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N9Q-6t-dEd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="UYz-La-eOS" customClass="DaneUzytkownikaTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="74" sectionHeaderHeight="22" sectionFooterHeight="22" id="ud0-2c-jZe">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="292"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" red="0.79607843137254897" green="0.79607843137254897" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cellID" rowHeight="74" id="bNV-Xa-b7P" customClass="CustomTableViewCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bNV-Xa-b7P" id="ica-eE-cKZ">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Bf-by-dMw">
+                                            <rect key="frame" x="8" y="8" width="552" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iv5-X3-dSm">
+                                            <rect key="frame" x="8" y="37" width="552" height="29"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="1Bf-by-dMw" firstAttribute="top" secondItem="ica-eE-cKZ" secondAttribute="topMargin" id="5OM-6X-cgN"/>
+                                        <constraint firstItem="Iv5-X3-dSm" firstAttribute="top" secondItem="1Bf-by-dMw" secondAttribute="bottom" constant="8" id="5ru-xh-GV9"/>
+                                        <constraint firstItem="Iv5-X3-dSm" firstAttribute="trailing" secondItem="ica-eE-cKZ" secondAttribute="trailingMargin" id="Ejy-VQ-idI"/>
+                                        <constraint firstItem="1Bf-by-dMw" firstAttribute="trailing" secondItem="ica-eE-cKZ" secondAttribute="trailingMargin" id="Ita-Tq-SpP"/>
+                                        <constraint firstItem="Iv5-X3-dSm" firstAttribute="leading" secondItem="ica-eE-cKZ" secondAttribute="leadingMargin" id="KKZ-6u-Lo1"/>
+                                        <constraint firstItem="1Bf-by-dMw" firstAttribute="leading" secondItem="ica-eE-cKZ" secondAttribute="leadingMargin" id="Ndw-fP-WMh"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Iv5-X3-dSm" secondAttribute="bottom" constant="-1" id="Wbc-zC-qmR"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.80085834703947367" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="Label" destination="1Bf-by-dMw" id="ahT-eZ-99F"/>
+                                    <outlet property="TextField" destination="Iv5-X3-dSm" id="cyJ-6v-9TX"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="UYz-La-eOS" id="X0e-4y-Jew"/>
+                            <outlet property="delegate" destination="UYz-La-eOS" id="JL9-If-k72"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="1639" y="1143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="zdjecie1.jpg" width="400" height="400"/>
+    </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+</document>
