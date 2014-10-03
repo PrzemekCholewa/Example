@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "CustomTableViewCell.h"
+#import "NSUser.h";
 @interface DaneUzytkownikaTableViewController : UITableViewController
 
 @end

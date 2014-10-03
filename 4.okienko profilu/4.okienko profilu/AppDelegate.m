@@ -25,10 +25,7 @@
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
     
-    NSUser *user=[[NSUser alloc]init];
-    user.Imie = @"PrzykladoweImie";
-    user.Nazwisko = @"PrzykładoweNazwisko";
-    user.Haslo = @"haslo";
+
    
     return YES;
 }

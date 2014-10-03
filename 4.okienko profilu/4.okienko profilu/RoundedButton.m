@@ -12,7 +12,7 @@
 
 -(void) awakeFromNib{
     [super awakeFromNib];
-    self.layer.cornerRadius = 2;
+    self.layer.cornerRadius = 3;
 }
 
 @end

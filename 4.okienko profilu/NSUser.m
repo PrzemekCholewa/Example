@@ -14,15 +14,19 @@ static NSString *kMojaSciezkaDoUsera = @"userPath";
 + (NSUser *) currentUser {
     
     if ([[NSFileManager defaultManager] fileExistsAtPath:kMojaSciezkaDoUsera]) {
-        // jesli istnieje to odczytaj go z pliku i zwroc
+        NSUser *user = [NSKeyedUnarchiver unarchiveObjectWithFile:@"Archiwum"];
+        return user;
     } else {
-        // jesli nie istnieje to utworz obiekt klasy NSUser i zapisz go do pliku a nastepnie zwroc
+        NSUser *user = [[NSUser alloc] init];
+        user.Imie = @"Imie!";
+        user.Nazwisko =@"Nazwisko!";
+        user.Haslo = @"haslo";
+        return user;
     }
     
 }
 - (void)save {
-    // zapisz do pliku obiekt self
-    [NSKeyedArchiver archiveRootObject:self.currentUser toFile:@"Archiwum"];
+    [NSKeyedArchiver archiveRootObject: self toFile:@"Archiwum"];
 }
 
 - (void)encodeWithCoder:(NSCoder *)encoder {
